@@ -13,7 +13,7 @@ function checkTemp(temp){
     return -1;
   } else if (temp >= 21 && temp <= 40) {
     return 0;
-  } else (temp >= 41 && temp <= 60) {
+  } else if(temp >= 41 && temp <= 60) {
     return 1;
   }
 };
