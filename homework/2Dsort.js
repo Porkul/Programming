@@ -35,3 +35,4 @@ for(let i=offersObjects.length-1; i>=0; i--)
     if(offersObjects[i].hind>max.hind){max=offersObjects[i]}
 }
 console.log(min, max)
+
