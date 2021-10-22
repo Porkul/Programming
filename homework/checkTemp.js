@@ -19,4 +19,3 @@ function checkTemp(temp){
 };
 
 console.log(checkTemp(prompt()));
- 
