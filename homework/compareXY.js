@@ -14,7 +14,6 @@ let result = onlyX.length === onlyY.length? true: false;
 console.log (result);
 }
 
-
 balanced("xxxyyy") => true
 balanced("yyyxxx") => true
 balanced("xxxyyyy") => false
