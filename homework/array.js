@@ -19,7 +19,7 @@ function toHours(sec) {
 console.log(toHours(86399));
 
 
-// 4. https://www.reddit.com/r/dailyprogrammer/comments/cdieag/20190715_challenge_379_easy_progressive_taxation/?utm_source=BD&utm_medium=Search&utm_name=Bing&utm_content=PSR1
+// 4. https://www.reddit.com challenge #383
 
 const  isString2 = (str1, string2) => {
   const str1Doubled = str1 + str1;
@@ -41,3 +41,20 @@ const  isString2 = (str1, string2) => {
   console.log(isString2("x", "xx")) ;
   console.log(isString2("x", ""));
   console.log(isString2("", ""));
+
+// 5. Mitme korruselise torni(püramiidi) saab ehitada 55 klotsiga, kui iga korruse ehitamiseks kulub üks klots rohkem kui eelmisel korrusel.
+//Ja mitu korrust 1372 klotsiga? 55-ga saab 10 korru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
