@@ -43,8 +43,19 @@ const  isString2 = (str1, string2) => {
   console.log(isString2("", ""));
 
 // 5. Mitme korruselise torni(püramiidi) saab ehitada 55 klotsiga, kui iga korruse ehitamiseks kulub üks klots rohkem kui eelmisel korrusel.
-//Ja mitu korrust 1372 klotsiga? 55-ga saab 10 korru
-
+//Ja mitu korrust 1372 klotsiga? 
+let i = 0;
+let sum = 0;
+let a= 1372;
+while (sum < a) {
+  i += 1
+  sum +=i
+}
+if (sum-a > 0){
+   console.log(i-1);
+ } else {
+   console.log(i);
+ }
 
 
 
