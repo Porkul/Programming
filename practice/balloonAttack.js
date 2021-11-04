@@ -1,5 +1,4 @@
-*/
-class Player {
+/* class Player {
   constructor(name, hitsPerMinute) {
     this.name = name;
     this.hitsPerMinute = hitsPerMinute;
@@ -28,7 +27,6 @@ class Player {
   }
 }
 
-// Write function below
 const balloonAttack = (player1, player2) => {
   for (let i = 1; i <= 10; i++){
     player2.balloonCount -= player1.hitsPerMinute
