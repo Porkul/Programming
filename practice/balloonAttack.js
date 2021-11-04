@@ -1,4 +1,5 @@
-/* class Player {
+/* 
+class Player {
   constructor(name, hitsPerMinute) {
     this.name = name;
     this.hitsPerMinute = hitsPerMinute;
