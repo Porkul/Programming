@@ -1,5 +1,4 @@
-/*
-Kirjutada selle juurde funktsioon mis loeb kokku mitu kindla algustähega koodi/stringi seal array's on.
+/* Kirjutada selle juurde funktsioon mis loeb kokku mitu kindla algustähega koodi/stringi seal array's on.
 Näiteks soovime lugeda kokku kõik "T" tähega algavad koodid/stringid array sees käivitades funktsiooni countCode("T")
 Funktsioon countCode(letter) tuleb teil ise kirjutada.
 Abiks tuleb teadmine kuidas array seest elemente kätte saada.
