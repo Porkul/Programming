@@ -8,6 +8,7 @@ function countCode(letter){
       count++
   }
   console.log(count)
+   return count
 }
 
 countCode("a")
