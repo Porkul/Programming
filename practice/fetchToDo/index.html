@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<htmllang="en">
+<head>
+   <metacharset="UTF-8">
+   <metahttp-equiv="X-UA-Compatible"content="IE=edge">
+   <metaname="viewport"content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+  <body>
+   <inputclass= "tekst"onkeyup="LisaKanne(event)">
+   <buttononclick= "LisaKanne(event)">Add</button>
+   <inputtype = "checkbox"></input>
+   <ulid = "list">
+   </ul>
+   <script>
+      functionlisaRida(name, done=false){​​​​​​​​​
+      console.log(name)
+      letli = document.createElement("li");
+      li.textContent = name;
+      
+      letcheckbox = document.createElement("input"); 
+      checkbox.type = "checkbox"
+      checkbox.checked = done
+      checkbox.onclick = e=>e.preventDefault()
+      li.appendChild(checkbox)
+      
+      li.onclick = function() {​​​​​​​​​
+      checkbox.checked = !checkbox.checked
+      if (!checkbox.checked)
+      li.style.textDecoration = "none"
+      else
+      li.style.textDecoration = "line-through"
+              }​​​​​​​​​
+      if (!checkbox.checked)
+      li.style.textDecoration = "none"
+      else
+      li.style.textDecoration = "line-through"
+      
+      letdel = document.createElement("button");
+      del.textContent= "Kustuta"
+      del.onclick = function() {​​​​​​​​​
+      li.remove();
+              }​​​​​​​​​
+      
+      li.appendChild(del);
+      letelement = document.getElementById("list");
+      element.appendChild(li);
+              }​​​​​​​​​
+      
+      functionLisaKanne() {​​​​​​​​​
+      console.log(event)
+      if (/*event.hasOwnProperty('key')*/'key'inevent  && event.key != "Enter")
+      return;
+      //console.log(document.body.children[0].value) //value toob valja selle mis on inputi sisse kirjutatud
+      //li.onclick = 
+      
+      lisaRida(document.body.children[0].value)
+      
+      //element.innerHTML += "<li>" + uusTekst + "</li>" "li" - list item
+      //adn.value = adn.value.split("").reverse().join("") //split- võttab sõna ja teeb selle eraldi tähtedeks 
+      //document.body.children[0].value = "123"
+              }​​​​​​​​​
+      fetch('http://demo2.z-bit.ee/todo.json')
+              .then(response=> {​​​​​​​​​
+      if (!response.ok) {​​​​​​​​​
+      thrownewError("HTTP error " + response.status); // Miks see siin on? "Kui response ei ole õige, viska ette error?"
+                      }​​​​​​​​​
+      returnresponse.json();
+              }​​​​​​​​​)
+              .then(tasks=> {​​​​​​​​​ // Sama hea kui "function tasks()"
+      for(i = 0; i < tasks.length; i++){​​​​​​​​​ //(let task of tasks) = (i = 0; i < tasks.length; i++)
+      lisaRida(tasks[i].title, tasks[i].markedAsDone) // teise meetotiga ei ole vaja [i] panna
+      console.log(tasks[i])
+                      }​​​​​​​​​
+      
+              }​​​​​​​​​)
+      
+   </script>
+  </body>
+</html>
